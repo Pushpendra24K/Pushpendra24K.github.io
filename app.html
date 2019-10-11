@@ -39,7 +39,7 @@
         FHIR.oauth2.ready(function (fhirClient) {
             myApp.smart = fhirClient;
             getAllFHIR()
-          }, function(){ alert("error") })
+          }, function(error){ alert(error) })
     }
 
     function getAllFHIR(){
